@@ -187,12 +187,24 @@ function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
+   if (valor === true) {
+      return "Soy verdadero";
+   } else {
+      return "Soy falso";
+      
+   }
 }
 
 function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
    // Caso contrario, retornar false.
    // Tu código:
+   if(num <=999 && num > 99){
+      return true;
+   }
+   else{
+      return false;
+   }
 }
 
 function doWhile(num) {
@@ -200,6 +212,14 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
+   let i = 0;
+   valor = null;
+   do {
+      i = i + 5;
+      valor = num + i;
+   } while (i < 40);
+   return valor;
+
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
