@@ -102,6 +102,8 @@ function numeroMasGrande(arrayOfNums) {
    // El parámetro "arrayOfNums" es un arreglo de números.
    // Retornar el número más grande.
    // Tu código:
+   
+   return Math.max(...arrayOfNums);
 }
 
 function multiplicarArgumentos() {
