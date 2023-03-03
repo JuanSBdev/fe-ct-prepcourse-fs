@@ -245,7 +245,23 @@ function breakStatement(num) {
    // Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
+   
    // Tu código:
+   let niuAr = [];
+   let suma = num;
+   for (let i = 0; i < 10; i++) {
+      suma += 2;
+      niuAr.push(suma);
+      if (i === suma) {
+         break;
+      } 
+      if (niuAr < 10) {
+         return "Se interrumpió la ejecución";
+
+      }
+     }
+     
+ return niuAr;
 }
 
 function continueStatement(num) {
