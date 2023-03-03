@@ -193,12 +193,32 @@ function mesesDelAño(array) {
    // "Marzo" y "Noviembre", guardarlos en un nuevo arreglo y retornarlo.
    // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
    // Tu código:
+   niuA = [];
+  for (let i = 0; i < array.length; i++) {
+if (array[i] === 'Enero' ||array[i] === 'Marzo' ||array[i] === 'Noviembre') {
+   niuA.push(array[i]);
+}
+    }
+    if (niuA.length<3) {
+       return "No se encontraron los meses pedidos";
+   } else {
+       return niuA;
+    }
+
 }
 
 function tablaDelSeis() {
    // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
    // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
    // Tu código:
+   let sum ;
+   let tabla = [];
+   
+   for (let i = 0; i < 11; i++) {
+      sum = 6* i;
+      tabla.push(sum)
+   }
+   return tabla;
 }
 
 function mayorACien(array) {

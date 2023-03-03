@@ -1,8 +1,15 @@
-function multiplicarArgumentos() {
-    // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto.
-    // Si no se pasan argumentos retorna 0. Si se pasa un argumento, simplemente retórnalo.
-    // [PISTA]: "arguments" es un arreglo.
-   
-      
+function tablaDelSeis() {
+    // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
+    // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
+    // Tu código:
+    let sum ;
+    let tabla = [];
+    
+    for (let i = 0; i < 11; i++) {
+       sum = 6* i;
+       tabla.push(sum)
+    }
+    return tabla;
+    console.log(tabla);
  }
- multiplicarArgumentos(1, 2, 3);
+ tablaDelSeis();
