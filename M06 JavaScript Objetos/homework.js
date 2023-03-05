@@ -155,6 +155,7 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
       return objetoProducto['precio'] - objetoProducto['precio'] * objetoProducto['porcentajeDeDescuento'];
    }
    return objetoProducto;
+   
 
 }
 
